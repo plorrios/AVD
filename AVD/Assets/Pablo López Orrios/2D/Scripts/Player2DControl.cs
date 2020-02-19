@@ -60,7 +60,6 @@ public class Player2DControl : MonoBehaviour
             crouch = true;
 
         }
-
         else if (Input.GetButtonUp("Crouch"))
         {
 
@@ -72,18 +71,19 @@ public class Player2DControl : MonoBehaviour
 
     public void OnLanding()
     {
-        animator.SetBool("IsJumping", false); 
+        animator.SetBool("IsJumping", false);
+        jump = false;
     }
 
     public void OnCrouching(bool isCrouching)
     {
-        //   animator.SetBool("IsCrouching", isCrouching); 
+        animator.SetBool("IsCrouching", isCrouching); 
     }
 
     void FixedUpdate()
     {
         // Move our character 
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-        jump = false;
+        //jump = false;
     }
 }
