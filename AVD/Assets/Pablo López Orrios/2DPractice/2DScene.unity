@@ -970,10 +970,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
+    - target: {fileID: 8931084114615077611, guid: afd4962204bdfb54a862294622d09cef,
+        type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36719534
+      value: 0.242
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
@@ -2977,12 +2982,12 @@ PrefabInstance:
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.30580467
+      value: 0.494
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5431701
+      value: 1.196
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
