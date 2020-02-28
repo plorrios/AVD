@@ -970,10 +970,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
+    - target: {fileID: 8931084114615077611, guid: afd4962204bdfb54a862294622d09cef,
+        type: 3}
+      propertyPath: item
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.36719534
+      value: 0.242
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
@@ -1081,7 +1086,6 @@ GameObject:
   - component: {fileID: 751089583}
   - component: {fileID: 751089586}
   - component: {fileID: 751089585}
-  - component: {fileID: 751089587}
   - component: {fileID: 751089588}
   - component: {fileID: 751089589}
   m_Layer: 0
@@ -1257,18 +1261,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &751089587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751089579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa6b3a3f88061ac4aa40e75b9e5cea7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &751089588
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2990,12 +2982,12 @@ PrefabInstance:
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.30580467
+      value: 0.494
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5431701
+      value: 1.196
       objectReference: {fileID: 0}
     - target: {fileID: 8931084114615077613, guid: afd4962204bdfb54a862294622d09cef,
         type: 3}
