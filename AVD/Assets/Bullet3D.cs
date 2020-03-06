@@ -11,8 +11,12 @@ public class Bullet3D : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        Destroy(gameObject, 2f);
         rb.AddRelativeForce(-transform.forward * speed, ForceMode.Impulse);
-        Destroy(gameObject, 3f);
     }
 
     public void Die() 
@@ -26,7 +30,8 @@ public class Bullet3D : MonoBehaviour
         if (layermask == (layermask | (1 << collision.gameObject.layer)))
         {
             rb.Sleep();
-            GetComponent<Animator>().SetTrigger("Die");
+            //Die();
+            //GetComponent<Animator>().SetTrigger("Die");
         }
     }
 }

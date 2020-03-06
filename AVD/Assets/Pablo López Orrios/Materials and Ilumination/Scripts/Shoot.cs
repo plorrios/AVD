@@ -9,8 +9,15 @@ public class Shoot : MonoBehaviour
     public bool shooting = true;
     public float frequency = 1;
 
+    private AudioSource audio;
+
     public Transform[] shootingPoints;
     public Animator[] GunsAnimators;
+
+    private void Start()
+    {
+        audio = gameObject.GetComponent<AudioSource>();
+    }
 
     public void Comienza()
     {
@@ -20,7 +27,7 @@ public class Shoot : MonoBehaviour
     IEnumerator Fire()
     {
         GunsAnimators[i].SetTrigger("Fire");
-
+        audio.Play();
         Instantiate(bullet, shootingPoints[i].position, shootingPoints[i].rotation);
         i++;
         if (i >= shootingPoints.Length) i = 0;
