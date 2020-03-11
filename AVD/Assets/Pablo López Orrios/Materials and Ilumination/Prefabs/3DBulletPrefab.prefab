@@ -275,7 +275,7 @@ MonoBehaviour:
   layermask:
     serializedVersion: 2
     m_Bits: 2048
-  speed: 3
+  speed: 15
 --- !u!198 &8094387915725235303
 ParticleSystem:
   m_ObjectHideFlags: 0

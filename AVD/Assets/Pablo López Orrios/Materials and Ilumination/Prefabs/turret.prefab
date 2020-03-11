@@ -4175,7 +4175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6488962556414582802, guid: 6745c74415927d143b706b055b867128, type: 3}
-  frequency: 0.2
+  frequency: 0.1
   shootingPoints:
   - {fileID: 6385246734792010313}
   - {fileID: 6385246734262493037}

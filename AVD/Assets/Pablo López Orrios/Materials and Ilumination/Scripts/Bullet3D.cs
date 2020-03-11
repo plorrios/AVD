@@ -6,7 +6,7 @@ using CreatorKitCode;
 public class Bullet3D : MonoBehaviour
 {
     public LayerMask layermask;
-    public float speed = 60f;
+    public float speed = 100f;
     private Rigidbody rb;
     // Start is called before the first frame update
     void Awake()
@@ -29,16 +29,8 @@ public class Bullet3D : MonoBehaviour
     {
         if (layermask == (layermask | (1 << collision.gameObject.layer)))
         {
-            CharacterData data = gameObject.GetComponent<CharacterData>();
-            data.Attack(collision.transform.gameObject.GetComponent<CharacterData>());
-
+            CharacterData enemydata = collision.transform.gameObject.GetComponent<CharacterData>();
+            enemydata.Stats.ChangeHealth(-enemydata.Stats.CurrentHealth);
         }
-        /*Debug.Log(collision.gameObject.name);
-        if (layermask == (layermask | (1 << collision.gameObject.layer)))
-        {
-            rb.Sleep();
-            //Die();
-            //GetComponent<Animator>().SetTrigger("Die");
-        }*/
     }
 }
