@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CreatorKitCode;
 
 public class Bullet3D : MonoBehaviour
 {
@@ -26,12 +27,18 @@ public class Bullet3D : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log(collision.gameObject.name);
+        if (layermask == (layermask | (1 << collision.gameObject.layer)))
+        {
+            CharacterData data = gameObject.GetComponent<CharacterData>();
+            data.Attack(collision.transform.gameObject.GetComponent<CharacterData>());
+
+        }
+        /*Debug.Log(collision.gameObject.name);
         if (layermask == (layermask | (1 << collision.gameObject.layer)))
         {
             rb.Sleep();
             //Die();
             //GetComponent<Animator>().SetTrigger("Die");
-        }
+        }*/
     }
 }

@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 8094387915725235303}
   - component: {fileID: 3160447448228002552}
   - component: {fileID: 8263535710812808044}
+  - component: {fileID: 6852682324159375632}
   m_Layer: 0
   m_Name: 3DBulletPrefab
   m_TagString: Untagged
@@ -273,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layermask:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 2048
   speed: 3
 --- !u!198 &8094387915725235303
 ParticleSystem:
@@ -5016,3 +5017,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6852682324159375632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488962556414582802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45ba4cd943b6c745bb32ca76b631cff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterName: Bullet
+  Stats:
+    baseStats:
+      health: 1
+      strength: 1
+      defense: 1
+      agility: 1
+      elementalProtection: 00000000000000000000000000000000
+      elementalBoosts: 00000000000000000000000000000000
+  StartingWeapon: {fileID: 11400000, guid: 497173f4be0fae341bea8f7c11087495, type: 2}
+  HitClip: []

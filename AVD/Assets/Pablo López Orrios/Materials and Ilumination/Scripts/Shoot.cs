@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     public GameObject bullet;
 
-    public bool shooting = true;
+    //public bool shooting = true;
     public float frequency = 1;
 
     private AudioSource audio;
@@ -14,9 +14,21 @@ public class Shoot : MonoBehaviour
     public Transform[] shootingPoints;
     public Animator[] GunsAnimators;
 
+    public float length = 5f;
+
     private void Start()
     {
         audio = gameObject.GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        length = length - Time.deltaTime;
+        if (length <= 0) { 
+            StopAllCoroutines(); 
+            gameObject.GetComponent<Animator>().SetTrigger("Die");
+            GameObject.Destroy(gameObject, 3);
+        }
     }
 
     public void Comienza()

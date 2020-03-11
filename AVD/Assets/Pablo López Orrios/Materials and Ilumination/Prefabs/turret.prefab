@@ -4175,8 +4175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6488962556414582802, guid: 6745c74415927d143b706b055b867128, type: 3}
-  shooting: 1
-  frequency: 0.1
+  frequency: 0.2
   shootingPoints:
   - {fileID: 6385246734792010313}
   - {fileID: 6385246734262493037}
@@ -4187,6 +4186,7 @@ MonoBehaviour:
   - {fileID: 6385246734630337000}
   - {fileID: 6385246736197814474}
   - {fileID: 6385246734956329010}
+  length: 5
 --- !u!82 &3151702825356524949
 AudioSource:
   m_ObjectHideFlags: 0

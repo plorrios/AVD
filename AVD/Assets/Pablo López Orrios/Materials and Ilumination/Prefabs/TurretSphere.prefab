@@ -125,6 +125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layermask:
     serializedVersion: 2
-    m_Bits: 65536
-  force: 20
+    m_Bits: 65792
+  force: 100
   Turret: {fileID: 3151702825356524948, guid: d5c1766f1defbf34a8380a37d2c344ed, type: 3}

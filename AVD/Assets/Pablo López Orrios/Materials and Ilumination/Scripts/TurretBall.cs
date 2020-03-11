@@ -7,7 +7,7 @@ public class TurretBall : MonoBehaviour
 
     public LayerMask layermask;
     private Rigidbody rb;
-    public float force;
+    public float force = 100f;
     public GameObject Turret;
     private bool instantiated = true;
 

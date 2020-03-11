@@ -8,6 +8,9 @@ public class ThrowTurret : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) { Instantiate(sphere, gameObject.transform.position, gameObject.transform.rotation); }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(sphere, gameObject.transform.position, gameObject.transform.rotation);
+        }
     }
 }
