@@ -24,9 +24,10 @@ public class TurretBall : MonoBehaviour
         {
             instantiated = false;
             Vector3 v2 = new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y + 0.321f, collision.contacts[0].point.z);
+            Quaternion v3 = new Quaternion(0, gameObject.transform.rotation.y, 0, 1);
             if (layermask == (layermask | (1 << collision.gameObject.layer)))
             {
-                Instantiate(Turret, v2, gameObject.transform.rotation);
+                Instantiate(Turret, v2, v3);
             }
             Destroy(gameObject);
         }
