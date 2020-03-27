@@ -52,4 +52,21 @@ public class LocomotionSimpleAgent : MonoBehaviour
 
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Dance"))
+        {
+            anim.SetBool("Dance", true);
+            other.gameObject.GetComponent<Animator>().SetBool("Start",true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Dance"))
+        {
+            anim.SetBool("Dance", false);
+            other.gameObject.GetComponent<Animator>().SetBool("Start", false);
+        }
+    }
 }
