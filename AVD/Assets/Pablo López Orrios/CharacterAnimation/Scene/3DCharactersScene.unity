@@ -339,7 +339,7 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AutoDolly:
-    m_Enabled: 1
+    m_Enabled: 0
     m_PositionOffset: 0
     m_SearchRadius: 2
     m_SearchResolution: 5
@@ -944,8 +944,12 @@ PlayableDirector:
     value: {fileID: 1979688822}
   - key: {fileID: 8768701740430809227, guid: 96561e310b88a65488ab69758e32df66, type: 2}
     value: {fileID: 1663252563}
+  - key: {fileID: -4532662144267808735, guid: 96561e310b88a65488ab69758e32df66, type: 2}
+    value: {fileID: 1979688825}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 3889c8202f1c213449d032cb77d72403: {fileID: 1979688824}
+    - 030866203594c04438e72e7990a89dfa: {fileID: 1979688824}
 --- !u!4 &500083648
 Transform:
   m_ObjectHideFlags: 0
@@ -3896,6 +3900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979688823}
   - component: {fileID: 1979688824}
+  - component: {fileID: 1979688825}
   m_Layer: 0
   m_Name: CM vcam2
   m_TagString: Untagged
@@ -3910,8 +3915,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979688822}
-  m_LocalRotation: {x: 0.10227349, y: -0.63430685, z: 0.08518665, w: 0.7615368}
-  m_LocalPosition: {x: 4.032814, y: 1.121583, z: -0.7413337}
+  m_LocalRotation: {x: 0.24730693, y: 0.06635218, z: -0.016977882, w: 0.9665136}
+  m_LocalPosition: {x: 2, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 331171314}
@@ -3953,6 +3958,25 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 331171314}
+--- !u!95 &1979688825
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979688822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2019626539
 GameObject:
   m_ObjectHideFlags: 0

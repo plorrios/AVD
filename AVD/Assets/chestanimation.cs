@@ -6,6 +6,7 @@ using UnityEngine.Playables;
 public class chestanimation : MonoBehaviour
 {
     private PlayableDirector director;
+    private bool started = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,10 @@ public class chestanimation : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        director.Play();
+        if (!started)
+        {
+            director.Play();
+            started = true;
+        }
     }
 }
